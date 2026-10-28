@@ -11,6 +11,7 @@ manifest:
     - name: elekit-official
       url-base: https://github.com/elekit-official
       revision: v0.3-branch+dya
+      import: app/west.yml
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -26,6 +27,12 @@ manifest:
       remote: elekit-official
       revision: main
       path: modules/zmk_encoder
+      
+          # ZMK: DYA Studio 用カスタム RPC サブシステム付き cormoran fork
+    - name: zmk
+      remote: cormoran
+      revision: v0.3-branch+dya
+      import: app/west.yml
 
           # DYA Studio モジュール（すべて cormoran リポジトリ）
     - name: zmk-module-ble-management
