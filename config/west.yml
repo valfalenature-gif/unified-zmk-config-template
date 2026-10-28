@@ -10,6 +10,7 @@ manifest:
       url-base: https://github.com/badjeff
     - name: elekit-official
       url-base: https://github.com/elekit-official
+      revision: v0.3-branch+dya
   projects:
     - name: zmk
       remote: zmkfirmware
